@@ -10,7 +10,12 @@ WORKDIR '/app'
 
 # to prevent unnecessary rebuilds
 COPY ./package.json ./
+
+# also remove npm_modules folder from local directory
 RUN npm install
+
+# this part is optional if there is a reference to local
+# but recommended to be kept
 COPY ./ ./
 
 # tell the image what to do when it starts as a container

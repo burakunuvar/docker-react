@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit src/App.js and save to reload.
+          final version: referenced to local- launced with docker-compose
         </p>
         <a
           className="App-link"
